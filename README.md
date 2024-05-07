@@ -1,1 +1,1 @@
-
+A program to fetch dates and times from a shared Google spreadsheet and add them to Google Calendar. The use case that inspired this was a spreadsheet of shifts for a job that I wanted to automatically fill out my calendar. 
