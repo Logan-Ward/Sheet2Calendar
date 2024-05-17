@@ -153,7 +153,7 @@
           document.getElementById('content').innerText = 'No files found.';
           return;
         }
-        // Flatten to string to display
+        // TODO: Check if an identical event has already been created at that date/time and skip that event creation if true
         files.forEach((file) => {
           let p = document.createElement('div');
           p.append(`${file.name} (${file.id})`);
@@ -177,7 +177,7 @@
                       start: {
                         dateTime: `${dt.getFullYear()}-${String(
                           dt.getMonth() + 1
-                        ).padStart(2, 0)}-${String(dt.getDate() + 1).padStart(
+                        ).padStart(2, 0)}-${String(dt.getDate()).padStart(
                           2,
                           0
                         )}T18:30:00-05:00`,
@@ -185,7 +185,7 @@
                       end: {
                         dateTime: `${dt.getFullYear()}-${String(
                           dt.getMonth() + 1
-                        ).padStart(2, 0)}-${String(dt.getDate() + 1).padStart(
+                        ).padStart(2, 0)}-${String(dt.getDate()).padStart(
                           2,
                           0
                         )}T22:30:00-05:00`,
@@ -204,7 +204,7 @@
                       start: {
                         dateTime: `${dt.getFullYear()}-${String(
                           dt.getMonth() + 1
-                        ).padStart(2, 0)}-${String(dt.getDate() + 1).padStart(
+                        ).padStart(2, 0)}-${String(dt.getDate()).padStart(
                           2,
                           0
                         )}T12:30:00-05:00`,
@@ -212,7 +212,7 @@
                       end: {
                         dateTime: `${dt.getFullYear()}-${String(
                           dt.getMonth() + 1
-                        ).padStart(2, 0)}-${String(dt.getDate() + 1).padStart(
+                        ).padStart(2, 0)}-${String(dt.getDate()).padStart(
                           2,
                           0
                         )}T17:30:00-05:00`,
