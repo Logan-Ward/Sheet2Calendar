@@ -1,11 +1,11 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>Drive API Quickstart</title>
+    <title>Sheet2Calendar</title>
     <meta charset="utf-8" />
   </head>
   <body>
-    <p>Drive API Quickstart</p>
+    <p>Sheet2Calendar</p>
 
     <!--Add buttons to initiate auth sequence and sign out-->
     <button id="authorize_button" onclick="handleAuthClick()">Authorize</button>
@@ -199,6 +199,7 @@
                       },
                     };
                   } else if (s.includes('5:30')) {
+                    let dt = new Date(dates[i] + ', 12:30:00');
                     return {
                       summary: 'Helpdesk Shift',
                       start: {
